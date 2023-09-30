@@ -1,0 +1,214 @@
+/* 全体 */
+
+* {
+  max-width: 1600px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ヘッダー */
+.header {
+  height: 644px;
+  background-image: url(/assets/team_images/sample_top.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_bar {
+  background-color: #d9d9d979;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+}
+
+.header_logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header_topText {
+  margin: 110px 0 0 50px;
+  color: #FFFFFF;
+}
+
+.header_title {
+  font-size: 90px;
+  line-height: 1;
+}
+
+.header_subTitle {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+/* コンセプト */
+.concept_container {
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+.concept_title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.concept_title > h2,
+.menu_mainTitle,
+.news_mainTitle {
+  font-size: 64px;
+}
+
+.concept_content {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  gap: 30px;
+}
+
+.concept_image {
+  width: 320px;
+  height: 320px;
+  border-radius: 20%;
+}
+
+/* メニュー */
+.menu_container,
+.news_container {
+  margin-top: 150px;
+  border-top: 1px solid;
+}
+
+.menu_mainTitle {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.menu_specialMenuList,
+.menu_regularMenuList {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.menu_specialMenuItem,
+.menu_regularMenuItem {
+  text-align: center;
+  width: 350px;
+}
+
+.menu_specialMenuImage,
+.menu_regularMenuImage {
+  height: 350px;
+  width: 350px;
+  border-radius: 200px;
+}
+
+.menu_menuItemText,
+.menu_price  {
+  margin-top: 30px;
+}
+
+.menu_title {
+  height: 90px;
+}
+
+.menu_title,
+.menu_price {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.menu_description {
+  font-size: 20px;
+}
+
+/* ニュース */
+
+.news_mainTitle {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.news_content {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.news_item {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.news_item + .news_item {
+  margin-top: 50px;
+}
+
+.news_itemTitle {
+  font-size: 32px;
+  font-weight: bold;
+  background-color: #D9D9D9;
+}
+
+.news_itemText {
+  height: 250px;
+  font-size: 20px;
+  text-align: left;
+  background-color: #EEEEEE;
+  padding: 30px;
+}
+
+/* shop info */
+.shop_infoContainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.shop_infoContent {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  height: 400px;
+}
+
+.shop_infoItem {
+  height: 120px;
+  width: 500px;
+  display: flex;
+}
+
+.shop_infoItemTitle {
+  font-size: 32px;
+  font-weight: bold;
+  width: 150px;
+}
+
+.shop_infoItemText {
+  font-size: 25px;
+}
+
+/* フッター */
+.footer {
+  height: 100px;
+  background-color: #484848;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer > small {
+  color: #FFFFFF;
+  font-size: 24px;
+}
