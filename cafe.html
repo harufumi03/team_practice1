@@ -9,15 +9,154 @@
   <title>webページ制作|MyPage</title>
   <meta name="description" content="webページ制作|MyPage">
   <link rel="stylesheet" href="assets/stylesheets/app.css">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
   <script src="assets/javascripts/lib/jquery-1.9.1.min.js" defer></script>
   <script src="assets/javascripts/index.js" defer></script>
 </head>
 <body>
-  <header>
+  <header class="header">
+    <div class="header_bar">
+      <p class="header_logo">logo</p>
+      <ul class="header_nav">
+        <li class="header_navItem">TOP</li>
+        <li class="header_navItem">MENU</li>
+        <li class="header_navItem">NEWS</li>
+      </ul>
+    </div>
+    <div class="header_top">
+      <div class="header_topText">
+        <h1 class="header_title">SMOKE CAFE</h1>
+        <p class="header_subTitle">natural organic cafe</p>
+      </div>
+    </div>
   </header>
   <main>
+    <!-- コンセプト -->
+    <div class="concept_container">
+      <div class="concept_image">
+        <img src="assets/team_images/sample_concept.jpg" alt="concept">
+      </div>
+      <div class="concept_title">
+        <h2>CONCEPT</h2>
+        <p>お店のこだわり</p>
+      </div>
+      <div class="concept_description">
+        <p>当店は産地にこだわったコーヒー豆を使用し、コクと香りを存分に楽しめるコーヒーを提供しております。</p>
+        <p>カフェでは、ドリンクだけでなく、軽食やスイーツの提供があります。</p>
+        <p>サンドイッチやパニーニ、サラダなどの軽食はランチやおやつにぴったりです。</p>
+        <p>またパンケーキなどのスイーツは、甘いものが好きな人にはたまらない魅力となっています。</p>
+      </div>
+    </div>
+    <!-- メニュー -->
+    <div class="menu_container">
+      <h2>SPECIAL MENU</h2>
+      <ul class="menu_specialMenuList">
+        <li class="menu_specialMenuItem">
+          <img class="menu_specialMenuImage" src="assets/team_images/sample_menu1.jpg" alt="menu1">
+          <div class="menu_manuItemText">
+            <h3 class="menu_title">ブルーベリーとバナナのパンケーキ</h3>
+            <p class="menu_description">フレッシュなフルーツを使用したオリジナルパンケーキです</p>
+            <p class="menu_price">¥700 -</p>
+          </div>
+        </li>
+        <li class="menu_specialMenuItem">
+          <img class="menu_specialMenuImage" src="assets/team_images/sample_menu2.jpg" alt="menu2">
+          <div class="menu_manuItemText">
+            <h3 class="menu_title">いちごのパンケーキ</h3>
+            <p class="menu_description">フレッシュなフルーツを使用したオリジナルパンケーキです</p>
+            <p class="menu_price">¥800 -</p>
+          </div>
+        </li>
+      </ul>
+      <h2>REGULAR MENU</h2>
+      <ul class="menu_regularMenuList">
+        <li class="menu_regularMenuItem">
+          <img class="menu_regularMenuImage" src="assets/team_images/sample_cafe1.jpg" alt="cafe1">
+          <div class="menu_manuItemText">
+            <h3 class="menu_title">ブレンドコーヒー</h3>
+            <p class="menu_description">当店イチオシのブレンド</p>
+            <p class="menu_price">¥400 -</p>
+          </div>
+        </li>
+        <li class="menu_regularMenuItem">
+          <img class="menu_regularMenuImage" src="assets/team_images/sample_cafe2.jpg" alt="cafe2">
+          <div class="menu_manuItemText">
+            <h3 class="menu_title">アイスコーヒー</h3>
+            <p class="menu_description">暑い日にぴったり</p>
+            <p class="menu_price">¥400 -</p>
+          </div>
+        </li>
+        <li class="menu_regularMenuItem">
+          <img class="menu_regularMenuImage" src="assets/team_images/sample_cafe3.jpg" alt="cafe3">
+          <div class="menu_manuItemText">
+            <h3 class="menu_title">カブチーノ</h3>
+            <p class="menu_description">オリジナルコーヒーを使用</p>
+            <p class="menu_price">¥550 -</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- ニュース -->
+    <div class="news_container">
+      <h2 class="news_mainTitle">NEWS</h2>
+      <div class="news_content">
+        <dl class="news_item">
+          <dt class="news_itemTitle">新メニュー追加しました！</dt>
+          <dd class="news_itemText">
+            <p>新たに2種類のパンケーキメニューが登場！！</p>
+            <p>フレッシュなフルーツをふんだんに使用したスペシャルメニューです！</p>
+            <p>パンケーキとの相性の良さをぜひご賞味ください！</p>
+          </dd>
+        </dl>
+        <dl class="news_item">
+          <dt class="news_itemTitle">ハロウィンイベント開催！！</dt>
+          <dd class="news_itemText">
+            <p>10/28(土) 10/29(日)にハロウィンイベントを開催いたします！</p>
+            <p>店内に大量のお菓子をご用意し、ハロウィンパーティーを実施します。</p>
+            <p>さらに仮装してご来店いただいた方にはお店で使えるコーヒーチケットをプレゼント！！</p>
+            <p>ご来店をお待ちしております！</p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- 店舗情報 -->
+    <div class="shop_info">
+      <dl class="shop_infoContent">
+        <div class="shop_infoItem">
+          <dt class="shop_infoItemTitle">住所</dt>
+          <dd class="shop_infoItemText">
+            <p>〒000-0000</p>
+            <p>大阪府大阪市北区一丁目</p>
+          </dd>
+        </div>
+        <div class="shop_infoItem">
+          <dt class="shop_infoItemTitle">TEL</dt>
+          <dd class="shop_infoItemText">0123-456-789</dd>
+        </div>
+        <div class="shop_infoItem">
+          <dt class="shop_infoItemTitle">Mail</dt>
+          <dd class="shop_infoItemText">example@mail.com</dd>
+        </div>
+        <div class="shop_infoItem">
+          <dt class="shop_infoItemTitle">営業時間</dt>
+          <dd class="shop_infoItemText">
+            <p>7:00~21:00</p>
+            <p>※ラストオーダー　20:30</p>
+          </dd>
+        </div>
+        <div class="shop_infoItem">
+          <dt class="shop_infoItemTitle">定休日</dt>
+          <dd class="shop_infoItemText">水曜日</dd>
+        </div>
+        <div class="shop_infoItem">
+          <dt class="shop_infoItemTitle">席数</dt>
+          <dd class="shop_infoItemText">テーブル20席/カウンター6席</dd>
+        </div>
+      </dl>
+    </div>
   </main>
-  <footer>
+  <footer class="footer">
+    <small>&copy;2000-2023 smoke cafe. All Rights Reserved.</small>
   </footer>
 </body>
 </html>
