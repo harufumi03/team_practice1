@@ -1,7 +1,7 @@
 /* 全体 */
 
 * {
-  max-width: 1600px;
+  /* max-width: 1600px; */
   list-style: none;
 }
 
@@ -12,48 +12,27 @@ a {
 
 /* ヘッダー */
 .header {
-  height: 644px;
   background-image: url(/assets/team_images/sample_top.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header_bar {
-  background-color: #d9d9d979;
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 25px;
-}
-
 .header_logo {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.header_nav {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  font-size: 24px;
   font-weight: bold;
 }
 
 .header_topText {
-  margin: 110px 0 0 50px;
   color: #FFFFFF;
 }
 
 .header_title {
-  font-size: 90px;
   line-height: 1;
 }
 
 .header_subTitle {
-  font-size: 40px;
   font-weight: bold;
   line-height: 1;
 }
-
 /* コンセプト */
 .concept_container {
   margin-top: 80px;
@@ -65,78 +44,39 @@ a {
   font-weight: bold;
 }
 
-.concept_title > h2,
-.menu_mainTitle,
-.news_mainTitle {
-  font-size: 64px;
+.concept_image {
+  border-radius: 20%;
 }
 
 .concept_content {
   display: flex;
-  align-items: center;
-  margin: 50px;
-  gap: 30px;
-}
-
-.concept_image {
-  width: 320px;
-  height: 320px;
-  border-radius: 20%;
 }
 
 /* メニュー */
 .menu_container,
 .news_container {
-  margin-top: 150px;
   border-top: 1px solid;
 }
 
 .menu_mainTitle {
   text-align: center;
-  margin-top: 80px;
 }
 
 .menu_specialMenuList,
 .menu_regularMenuList {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .menu_specialMenuItem,
 .menu_regularMenuItem {
   text-align: center;
-  width: 350px;
-}
-
-.menu_specialMenuImage,
-.menu_regularMenuImage {
-  height: 350px;
-  width: 350px;
-  border-radius: 200px;
 }
 
 .menu_menuItemText,
 .menu_price  {
   margin-top: 30px;
 }
-
-.menu_title {
-  height: 90px;
-}
-
-.menu_title,
-.menu_price {
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.menu_description {
-  font-size: 20px;
-}
-
 /* ニュース */
-
 .news_mainTitle {
   text-align: center;
   margin-top: 80px;
@@ -147,60 +87,31 @@ a {
   margin-top: 80px;
 }
 
-.news_item {
-  width: 1000px;
-  margin: 0 auto;
-}
-
 .news_item + .news_item {
   margin-top: 50px;
 }
 
 .news_itemTitle {
-  font-size: 32px;
   font-weight: bold;
   background-color: #D9D9D9;
 }
 
 .news_itemText {
-  height: 250px;
-  font-size: 20px;
-  text-align: left;
   background-color: #EEEEEE;
-  padding: 30px;
 }
-
-/* shop info */
+/* shop-info */
 .shop_infoContainer {
   margin-top: 100px;
-  display: flex;
-  justify-content: center;
-}
-
-.shop_infoContent {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: flex-start;
-  height: 400px;
-}
-
-.shop_infoItem {
-  height: 120px;
-  width: 500px;
-  display: flex;
 }
 
 .shop_infoItemTitle {
-  font-size: 32px;
   font-weight: bold;
-  width: 150px;
 }
 
 .shop_infoItemText {
-  font-size: 25px;
+  font-size: 20px;
 }
 
-/* フッター */
 .footer {
   height: 100px;
   background-color: #484848;
@@ -210,5 +121,339 @@ a {
 
 .footer > small {
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 796px) { /* pc */
+/* ヘッダー */
+  .header {
+    height: 700px;
+  }
+
+  .header_bar {
+    background-color: #d9d9d979;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+  }
+
+  .header_logo {
+    font-size: 40px;
+  }
+
+  .header_nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 24px;
+  }
+
+  .header_topText {
+    margin: 110px 0 0 50px;
+  }
+
+  .header_title {
+    font-size: 90px;
+  }
+
+  .header_subTitle {
+    font-size: 40px;
+  }
+
+  /* コンセプト */
+  .concept_title > h2,
+  .menu_mainTitle,
+  .news_mainTitle {
+    font-size: 64px;
+  }
+
+  .concept_content {
+    align-items: center;
+    margin: 50px;
+    gap: 30px;
+  }
+
+  .concept_image {
+    width: 320px;
+    height: 320px;
+  }
+
+  /* メニュー */
+  .menu_container,
+  .news_container {
+    margin-top: 150px;
+  }
+
+  .menu_mainTitle {
+    margin-top: 80px;
+  }
+
+  .menu_specialMenuList,
+  .menu_regularMenuList {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+  }
+
+  .menu_specialMenuItem,
+  .menu_regularMenuItem {
+    width: 350px;
+  }
+
+  .menu_specialMenuImage,
+  .menu_regularMenuImage {
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+  }
+
+  .menu_title {
+    height: 90px;
+  }
+
+  .menu_title,
+  .menu_price {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .menu_description {
+    font-size: 20px;
+  }
+
+  /* ニュース */
+  .news_item {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  .news_itemTitle {
+    font-size: 32px;
+  }
+
+  .news_itemText {
+    height: 250px;
+    font-size: 20px;
+    text-align: left;
+    padding: 30px;
+  }
+
+  /* shop info */
+  .shop_infoContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .shop_infoContent {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    gap: 70px;
+    height: 400px;
+  }
+
+  .shop_infoItem {
+    display: flex;
+  }
+
+  .shop_infoItemTitle {
+    font-size: 24px;
+    width: 100px;
+    margin-right: 30px;
+  }
+
+  .pc_none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp */
+
+  /* ヘッダー */
+  .header {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .header_bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(139, 69, 19, 0.391) ;
+    position: fixed;
+  }
+
+  .header_logo {
+    font-size: 25px;
+    color: #FFFFFF;
+    padding: 10px;
+  }
+
+  .header_topText{
+    padding: 100px 0 0 50px;
+  }
+
+  .header_title {
+    font-size: 40px;
+  }
+
+  .header_subTitle {
+    font-size: 24px;
+  }
+
+  /* コンセプト */
+  .concept_title > h2,
+  .menu_mainTitle,
+  .news_mainTitle {
+    font-size: 30px;
+  }
+
+  .concept_content {
+    margin: 50px;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .concept_image {
+    width: 280px;
+    height: 280px;
+  }
+
+  .concept_description {
+    margin-top: 50px;
+  }
+
+  /* メニュー */
+  .menu_container {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  .menu_mainTitle {
+    margin-top: 50px;
+  }
+
+  .menu_specialMenuItem + .menu_specialMenuItem,
+  .menu_regularMenuItem + .menu_regularMenuItem {
+    margin-top: 50px;
+  }
+
+  .menu_specialMenuImage,
+  .menu_regularMenuImage {
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+  }
+
+  .menu_title {
+    font-size: 24px;
+  }
+
+  .menu_description {
+    margin-top: 15px;
+  }
+
+  .menu_price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .news_content {
+    margin: 0 20px;
+    text-align: left;
+  }
+
+  .news_itemTitle,
+  .news_itemText {
+    padding: 20px;
+  }
+
+  .shop_infoContainer {
+    margin: 40px;
+  }
+
+  .footer {
+    height: 100%;
+  }
+
+  /* ハンバーガーメニュー */
+  .hamburger-menu {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: none;
+    background: transparent;
+    appearance: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .hamburger-menu__bar {
+    display: inline-block;
+    width: 44%;
+    height: 2px;
+    background: #242424;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+  }
+
+  .hamburger-menu__bar:first-child {
+    top: 16px;
+  }
+
+  .hamburger-menu__bar:nth-child(2) {
+    top: 24px;
+  }
+
+  .hamburger-menu__bar:last-child {
+    top: 32px;
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar {
+    top: 50%;
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar:first-child {
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar:last-child {
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  }
+
+  .hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
+    display: none;
+  }
+
+  .header_nav {
+    display: none;
+    background: #242424b6;
+    position: absolute;
+    top: 58px;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .header_navItem {
+    border-bottom: solid 1px #474747;
+  }
+
+  .nav_link {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 24px 0;
+    transition: .5s;
+    text-align: center;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .navigation__link:hover {
+      background: #333;
+    }
+  }
 }
