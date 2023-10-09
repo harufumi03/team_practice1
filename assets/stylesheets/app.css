@@ -94,11 +94,44 @@ a {
 .news_itemTitle {
   font-weight: bold;
   background-color: #D9D9D9;
+  position: relative;
 }
 
 .news_itemText {
   background-color: #EEEEEE;
+  display: none;
 }
+
+/* アコーディオンパネル */
+
+/*アイコンの＋と×*/
+.news_itemTitle::before,
+.news_itemTitle::after{
+  position: absolute;
+  content:'';
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+}
+.news_itemTitle::before{
+  top:48%;
+  left: 15px;
+  transform: rotate(0deg);
+}
+.news_itemTitle::after{
+  top:48%;
+  left: 15px;
+  transform: rotate(90deg);
+}
+/*　closeというクラスがついたら形状変化　*/
+.news_itemTitle.close::before{
+  transform: rotate(45deg);
+}
+
+.news_itemTitle.close::after{
+  transform: rotate(-45deg);
+}
+
 /* shop-info */
 .shop_infoContainer {
   margin-top: 100px;
@@ -358,7 +391,7 @@ a {
     font-size: 24px;
     font-weight: bold;
   }
-
+/* ニュース */
   .news_content {
     margin: 0 20px;
     text-align: left;
@@ -367,6 +400,10 @@ a {
   .news_itemTitle,
   .news_itemText {
     padding: 20px;
+  }
+
+  .news_itemTitle {
+    text-align: center;
   }
 
   .shop_infoContainer {
